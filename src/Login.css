@@ -111,3 +111,80 @@
 .resetBtn:hover {
   background: black;
 }
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 90vw;
+    max-width: 350px;
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+/* EXTRA SMALL SCREENS (Mobile phones) */
+@media (max-width: 480px) {
+  .container {
+    gap: 20px;
+    padding: 15px 10px;
+  }
+
+  .card {
+    width: 95vw;
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .counterBtns button {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .resetBtn {
+    padding: 8px 20px;
+    margin-top: 15px;
+    font-size: 12px;
+  }
+}
