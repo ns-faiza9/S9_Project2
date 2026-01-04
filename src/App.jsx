@@ -1,4 +1,4 @@
-import "./login.css";
+import "./Login.css";
 import Login from "./Login";
 import Counter from "./Counter";
 
