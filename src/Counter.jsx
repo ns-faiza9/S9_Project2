@@ -3,27 +3,31 @@ import { useState } from "react";
 const Counter = () => {
   const [count, setCount] = useState(0);
 
-  const handleIncrement = () => setCount(count + 1);
+  const increment = () => setCount(count + 1);
 
-  const handleDecrement = () => {
+  const decrement = () => {
     if (count > 0) {
       setCount(count - 1);
-    } else {
-      setCount(0); // stop at 0
     }
   };
 
-  const handleReset = () => setCount(0);
+  const reset = () => setCount(0);
 
   return (
-    <>
-      <h2>Count: {count}</h2>
-      <button onClick={handleIncrement}>+</button>
-      <button onClick={handleDecrement} disabled={count === 0}>
-        -
+    <div className="card">
+      <h2 className="title">COUNTER</h2>
+
+      <div className="count">{count}</div>
+
+      <div className="counterBtns">
+        <button onClick={decrement}>-</button>
+        <button onClick={increment}>+</button>
+      </div>
+
+      <button className="resetBtn" onClick={reset}>
+        RESET
       </button>
-      <button onClick={handleReset}>Reset</button>
-    </>
+    </div>
   );
 };
 
